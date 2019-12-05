@@ -33,11 +33,12 @@ type upgradeParam struct {
 	branchID         []byte
 }
 
-// https://github.com/zcash/zcash/blob/89f5ee5dec3fdfd70202baeaf74f09fa32bfb1a8/src/chainparams.cpp#L99
+// https://github.com/zcash/zcash/blob/868c63f92d7db1905ccee4cda936f3e4ed5ca462/src/chainparams.cpp#L121
 var upgradeParams = []upgradeParam{
 	{0, []byte{0x00, 0x00, 0x00, 0x00}},
 	{207500, []byte{0x19, 0x1B, 0xA8, 0x5B}},
 	{419200, []byte{0xBB, 0x09, 0xB8, 0x76}},
+	{653600, []byte{0x2B, 0xB4, 0x0E, 0x60}},
 }
 
 // RawTxInSignature returns the serialized ECDSA signature for the input idx of
